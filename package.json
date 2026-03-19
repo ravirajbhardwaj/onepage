@@ -47,6 +47,7 @@
 		"wrangler": "^4.63.0"
 	},
 	"dependencies": {
+		"better-auth": "^1.5.5",
 		"mode-watcher": "^1.1.0"
 	}
 }

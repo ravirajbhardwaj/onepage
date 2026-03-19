@@ -10,7 +10,10 @@ declare global {
 		}
 
 		// interface Error {}
-		// interface Locals {}
+		interface Locals {
+			session: Session | null;
+			user: User | null;
+		}
 		// interface PageData {}
 		// interface PageState {}
 	}
