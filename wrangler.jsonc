@@ -9,5 +9,13 @@
 		"directory": ".svelte-kit/cloudflare"
 	},
 	"workers_dev": true,
-	"preview_urls": true
+	"preview_urls": true,
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "onepage",
+			"database_id": "onepage",
+			"migrations_dir": "drizzle"
+		}
+	]
 }
