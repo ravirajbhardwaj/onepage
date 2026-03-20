@@ -3,7 +3,10 @@
 declare global {
 	namespace App {
 		interface Platform {
-			env: Env;
+			env: {
+				DB: D1Database;
+				JWT_SECRET: string;
+			};
 			ctx: ExecutionContext;
 			caches: CacheStorage;
 			cf?: IncomingRequestCfProperties;
@@ -11,8 +14,8 @@ declare global {
 
 		// interface Error {}
 		interface Locals {
-			session: Session | null;
-			user: User | null;
+			db: import('drizzle-orm/d1').DrizzleD1Database<typeof import('./lib/server/db/schema')>;
+			user: { id: string; email: string; isPaid: boolean } | null;
 		}
 		// interface PageData {}
 		// interface PageState {}
