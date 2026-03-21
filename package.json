@@ -51,6 +51,7 @@
 		"@polar-sh/sveltekit": "^0.7.5",
 		"jose": "^6.2.2",
 		"mode-watcher": "^1.1.0",
+		"resend": "^6.9.4",
 		"zod": "^4.3.6"
 	}
 }
