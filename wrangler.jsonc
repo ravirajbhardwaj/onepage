@@ -14,7 +14,7 @@
 		{
 			"binding": "DB",
 			"database_name": "onepage",
-			"database_id": "onepage",
+			"database_id": "c9b9047e-2fc5-4652-b219-d7fdda08cff1",
 			"migrations_dir": "drizzle"
 		}
 	]
