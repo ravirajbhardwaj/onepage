@@ -1,8 +1,9 @@
 import { Resend } from 'resend';
+import { env } from '$env/dynamic/private';
 
 export async function sendMagicLinkEmail(email: string, magicLink: string) {
 
-	const resend = new Resend(process.env.RESEND_API_KEY);
+	const resend = new Resend(env.RESEND_API_KEY);
 	await resend.emails.send({
 		from: 'onboarding@resend.dev', // Update with your domain!
 		to: email,
